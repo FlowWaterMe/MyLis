@@ -1,0 +1,36 @@
+﻿  Uic'ing LISCommunication.ui...
+  Rcc'ing LISCommunication.qrc...
+  Moc'ing LISCommunication.h...
+   RCC: Warning: No resources in 'E:\Young\project\LISCommunication\LISCommunication\LISCommunication.qrc'.
+  Moc'ing LisConnect.h...
+  Moc'ing LisASTMProtocol.h...
+  Moc'ing LisHL7Protocol.h...
+  Moc'ing LisProtocol.h...
+  Moc'ing LisSerialConnect.h...
+  Moc'ing LisTCPConnect.h...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(936,5): warning MSB8027: Two or more files with the name of moc_LisSerialConnect.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_LisSerialConnect.cpp, GeneratedFiles\Debug\moc_LisSerialConnect.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(936,5): warning MSB8027: Two or more files with the name of moc_LisTCPConnect.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_LisTCPConnect.cpp, GeneratedFiles\Debug\moc_LisTCPConnect.cpp.
+  moc_LisSerialConnect.cpp
+  moc_LisTCPConnect.cpp
+  LisASTMProtocol.cpp
+  LISCommunication.cpp
+  LisConnect.cpp
+  LisData.cpp
+  LisDef.cpp
+  LisHL7Protocol.cpp
+  LisProtocol.cpp
+  LisSerialConnect.cpp
+  LisTCPConnect.cpp
+  main.cpp
+  qrc_LISCommunication.cpp
+  moc_LISCommunication.cpp
+  moc_LisConnect.cpp
+  moc_LisASTMProtocol.cpp
+  moc_LisHL7Protocol.cpp
+  moc_LisProtocol.cpp
+  moc_LisSerialConnect.cpp
+  moc_LisTCPConnect.cpp
+Debug\moc_LisSerialConnect.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+Debug\moc_LisTCPConnect.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  LISCommunication.vcxproj -> E:\Young\project\LISCommunication\Debug\LISCommunication.exe
+  LISCommunication.vcxproj -> E:\Young\project\LISCommunication\Debug\LISCommunication.pdb (Full PDB)

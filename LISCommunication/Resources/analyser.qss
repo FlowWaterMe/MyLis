@@ -1,0 +1,1559 @@
+/* QMenu	QAction	QLabel	QFrame	QWidget	QMainWindow	QCheckBox 	QRadioButton	QProgressBar	QSpinBox  QDoubleSpinBox
+*  QDateEdit  QTimeEdit  QDateTimeEdit	QTextEdit	QPlainTextEdit	QPushButton	QGroupBox	QToolButton	QLineEdit	QComboBox
+*  QTableWidget	QScrollBar	QTabWidget	QTabBar	QSlider	QListView
+*/
+
+/***************************************************QDialog**********************************************************/
+QDialog#FormSampleReq
+{
+    background-image: url(:/CMainWin/Resources/images/SampleDlg/Sample_Background.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QDialog#HintDlg
+{
+    background: rgba(255, 255, 0, 60%); 
+    border-radius: 15px 15px;
+}
+
+QDialog#SoftKeyboard
+{
+    background: rgba(255, 255, 255, 95%);
+    border: 12px solid white;
+}
+
+/***************************************************QMenu**********************************************************/
+QMenu
+{
+    color: white;
+    background-color: white;
+    font:12pt "Microsoft YaHei";
+    border:12px solid white;
+}
+
+QMenu::item
+{
+    height: 35px;
+    padding:1px 20px 1px 40px;
+    background-color: white;
+    font:12pt "Microsoft YaHei";
+    color:black;
+}
+
+
+QMenu::item:selected:enabled
+{
+    background: rgb(55, 150, 244);
+    background-color: rgb(0,147,211);
+    color: white;
+}
+
+QMenu::item:selected:!enabled
+{
+    background:transparent;
+}
+
+
+QMenu::separator 
+{
+    height: 1px;
+    width: 20px;
+    background: rgb(0,147,211);
+}
+
+
+QMenu::indicator 
+{
+    width: 13px;
+    height: 13px;
+ }
+ 
+
+/************************************************ QAction *******************************************************/
+QAction
+{    
+	font:12pt "Microsoft YaHei";
+
+}
+
+/***************************************************QLabel**********************************************************/
+QLable
+{
+    font: 12pt "Microsoft YaHei";
+    background: transparent;
+    border: 0px;
+}
+
+
+CInitDialog QLabel
+{
+    font-family: "Microsoft YaHei";	
+    font-size: 12pt;
+    color:white;
+}
+
+CAboutDlg QLabel
+{
+    font: 12pt "Microsoft YaHei";
+    background: transparent;
+}
+
+CShutDownDialog QLabel
+{
+    font: 12pt "Microsoft YaHei";
+    background: transparent;
+}
+
+CDailyMultiPageDlg QLabel
+{
+    background-color: transparent;
+}
+
+FormResult QLabel
+{
+    font: 12pt "Microsoft YaHei";
+    color: rgb(0,147,211);
+}
+
+FormQCReq QLabel
+{
+    font: 12pt "Microsoft YaHei";
+    color: rgb(0,147,211);
+}
+
+QLabel#labName, #labCheckTime
+{
+    font: 12pt "Microsoft YaHei";
+    color: black;
+}
+
+PagePanel QLabel
+{
+    font: 10pt "Microsoft YaHei";
+    background: transparent;
+}
+
+QLabel#lab_Time
+{
+    font: 13pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_Date
+{
+    font: 10pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_User
+{
+    font: 12pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_Notice
+{
+    font: 12pt "Microsoft YaHei";
+/*    color: white;*/
+    background-color: rgb(86, 157, 207);
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+QLabel#label_SelfCheck,#label_LoginPower
+{
+    font: 13pt "Microsoft YaHei";
+    color: white;
+}
+
+
+QLabel#lab_IntiHint1,#lab_IntiHint2,#lab_IntiHint3
+{
+    font: 12pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_InstrumentName
+{
+    font: 20pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_LoadingPercent,#lab_Loading
+{
+    font: 14pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_DY,#lab_XXX,#lab_unit,#lab_item
+{
+    font: 12pt "Microsoft YaHei";
+    color: white;
+}
+
+QLabel#lab_Border1,#lab_Border2,#lab_Border3,#lab_Border4,#lab_Border5
+,#lab_Border6,#lab_Border7,#lab_Border8,#lab_Border9,#lab_Border10,#lab_Border11
+,#lab_Border12
+{
+    background-image:url(":/CMainWin/Resources/images/NavigationBar/Border_Line.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QLabel#labAlarmIcon,#labRstEditIcon,#labCalibPreSetIcon,#labAboutIcon,#labCDKeyIcon,#labShutDownIcon,#labSmpModifyIcon
+,#labMessageDlgIcon,#labDictionaryIcon
+{
+    background-image: url(:/CMainWin/Resources/images/Popup/PopDlg_logo.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QLabel#labInstrument
+{
+    background-image: url(:/CMainWin/Resources/images/AboutDlg/PA.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QLabel#lab_ReadCrad
+{
+    background-image: url(:/CMainWin/Resources/image/CalibDlg/ReadCard.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QLabel#labelValidateHint
+{
+    color: red;
+    font: 8pt "Microsoft YaHei";
+}
+
+/***************************************************QFrame**********************************************************/
+QFrame
+{
+    font-family: "Microsoft YaHei";
+    font-size: 12pt;  
+    background-color: transparent;
+}
+
+QFrame#frame_Sample
+{
+    background-color: rgb(175, 215, 255);
+    border-radius: 5px;
+}
+
+QFrame#frameAssay1 > QLabel,QFrame#frameAssay2 > QLabel
+{
+    font: bold;
+}
+
+QFrame#frameAssay1,#frameAssay2
+{
+    background:qradialgradient(spread:pad, cx:0.5, cy:0.9, radius:0.8, fx:0.5, fy:2, stop:0 rgba(161, 235, 255, 240), stop:0.5 rgba(161, 235, 255, 200), stop:1 rgba(161, 235, 255, 0));
+    border-radius: 5px;
+}
+
+QFrame#frameAssay1:!enabled,#frameAssay2:!enabled
+{
+    background-color: transparent;
+}
+
+QFrame#frame_Alarm,#frame_About,#frame_ShutDown,#frame_SResult,#frame_QC,#frame_cdKeyDecode
+,#frame_SModify,#frame_Message,#frame_QCCurveDetail, #frame_ResultEdit,#frame_CalibPreSetDlg,#frame_Dictionary
+,#frame_Password
+{
+    border-radius: 5px;
+    border: 1px solid rgb(163, 209, 255);
+    background-color: /*rgb(221, 238, 255)*/white;
+}
+
+
+QFrame#frame_Qc,#frame_QcOrder,#frame_SResult_2,#frame_CalibOrder,#frame_Calib,#frame_Order,#frame_CalibDetail
+{
+    border: 1px solid rgb(22, 181, 255);
+    border-top: 0px;
+    border-radius: 5px;
+}
+
+CChartView
+{
+    font-family: "Microsoft YaHei";
+    font-size: 10pt;  
+
+}
+/************************************************ QWidget **********************************************************/
+
+QWidget
+{
+    font-family: "Microsoft YaHei";
+    font-size: 12pt; 
+    background-color: transparent;
+}
+
+
+QWidget#ShortStayMsgWidget 
+{
+    background: rgba(255, 255, 0, 60%); 
+    border-radius: 15px 15px;
+}
+
+QWidget#widget_title
+{
+    background-color: rgb(55,150,244);
+}
+
+QWidget#widget_Alarm,#widget_About,#widget_ShutDown,#widget_SResult#widget_QCResult,#widget_QC
+,#widget_SampleModify,#widget_Message,#widget_ResultEdit,#widget_cdKeyDecode,#widget_CalibPreSetDlg
+,#widget_Dictionary,#widget_Password
+{
+    background-color: /*rgb(175, 215, 255)*/rgb(0, 122, 187);
+    border-radius: 10px 10px;
+}
+
+QWidget#widget_curvedlg,#wg_Calendar
+{
+    background-color: rgb(175, 215, 255);
+    border-radius: 10px 10px;
+}
+
+QWidget#widget_Subhead
+{
+    background-color: rgb(0, 109, 180);
+}
+
+QWidget#widget_Keyboard
+{
+    background-color: rgb(221, 238, 254);
+}
+
+QWidget#widget_notice/*,#widget_QcCurve*/
+{
+    border: 1px solid rgb(55,150,244);
+    border-radius: 5px
+}
+
+    
+QWidget#widget_One
+{
+    border-top: 1px solid lightgray;
+    background-color: rgb(0, 89, 157);
+}
+
+QWidget#widget_Notice
+{
+    border-top: 0px solid lightgray;
+    background-color: rgb(0, 89, 157);
+}
+
+QWidget#widget_Four,#widget_Five,#widget_User
+{
+    border-left: 0px solid lightgray;
+    border-right: 0px solid lightgray;
+}
+
+/*
+QWidget#widget_curve,#widget_CalibCurve
+{
+    background-color: transparent;
+    border: 1px solid rgb(22, 181, 255);
+}
+
+CDialogCurve#DialogCurve
+{
+    background-color: rgb(175, 215, 255);
+    border-radius: 15px 50px
+}*/
+
+Dialog QHeaderView::section
+{
+    min-height: 40px;
+    color: white;
+    border-right: 0px solid rgb(62,195,255) ;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: rgb(0,147,211);
+    font: 12pt "Microsoft YaHei";
+}
+
+
+QWidget#widget_initdlg
+{
+    background-image: url(":/CMainWin/Resources/images/SelfCheckDlg/Init_Background.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#CWelcomeUiClass
+{
+    background-image: url(":/CWelcomeUi/Resources/Init_Background.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+
+QWidget#widget_advanced_tail
+{
+    background-image: url(":/CMainWin/Resources/images/SelfCheckDlg/Advanced_Tail.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#widget_progress
+{
+    background-image: url(":/CMainWin/Resources/images/SelfCheckDlg/Loading.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#Welcome_widget_progress
+{
+    background-image: url(":/CWelcomeUi/Resources/Loading.png");
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#PopDlg_Background
+{
+    background-image: url(:/CMainWin/Resources/images/Popup/PopDlg_Background.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#CStandByDlg
+{
+    background-image: url(:/CMainWin/Resources/images/StandBy.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+QWidget#BackgroundFrame
+{
+    background-image: url(:/CMainWin/Resources/images/Popup/PopDlg_Background.png);
+    background-repeat: no-repeat;
+    background-position: Center;
+} 
+
+/************************************************ QMainWindow *****************************************************/
+QMainWindow
+{
+	background-color: rgb(230,240,255);
+}
+
+
+/***************************************************QCheckBox**********************************************************/
+QCheckBox
+{
+    spacing: 5px;
+    font: 12pt "Microsoft YaHei";
+    min-width: 30px;
+    min-height: 30px;
+    color: black;
+    outline: none;
+}
+
+QCheckBox::indicator
+{
+    height: 25px;
+    width: 25px;
+    subcontrol-origin: padding;
+    subcontrol-position: left center;
+    background-color: transparent;
+    margin: 0px;
+    border: 1px solid transparent;
+}
+
+
+QCheckBox::indicator:unchecked
+{
+    image: url(":/CMainWin/Resources/images/public/cbx_uncheck.png");
+}
+
+QCheckBox::indicator:checked
+{
+    image: url(":/CMainWin/Resources/images/public/cbx_check.png");
+}
+
+
+
+/**************************************************QRadioButton*********************************************************/
+QRadioButton
+{
+    spacing: 5px;
+    font: 12pt "Microsoft YaHei";
+    min-width: 30px;
+    min-height: 30px;
+    color: rgb(0,147,211);
+    outline: none;
+}
+
+QRadioButton::indicator
+{
+    height: 20px;
+    width: 20px;
+    subcontrol-origin: margin;
+    subcontrol-position: left center;
+    margin: 0px;
+    border: 1px solid transparent;
+}
+
+/*
+QRadioButton::indicator:unchecked:hover
+{
+    background: none;
+}
+
+
+QRadioButton::indicator:checked:hover
+{
+    background: none;
+}*/
+
+
+QRadioButton::indicator:unchecked
+{
+    image: url(":/CMainWin/Resources/images/public/rbt_uncheck.png");
+}
+
+
+QRadioButton::indicator:checked
+{
+    image: url(":/CMainWin/Resources/images/public/rbt_check.png");
+}
+
+
+
+/***************************************************QProgressBar********************************************************/
+QProgressBar
+{
+    font: 12pt "Microsoft YaHei";
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 1px;
+    min-width: 19px;
+    height: 19px;
+    outline: none;
+    text-align: center;
+    background-color: rgb(22, 181, 255);
+}
+
+QProgressBar::chunk
+{
+    background-color: white;
+    width: 10px;
+    margin: 0.5px;
+}
+
+
+
+/************************************************ QDateTimeEdit  QTimeEdit QDateEdit *******************************************************/
+
+QDateTimeEdit,
+QDateEdit
+{ 
+	font: 12pt "Arial";
+/*	width: 120px;*/
+	height: 35px;
+	background-color: transparent;
+	border: 1px solid rgb(115,185,255);
+	padding:0px;
+	border-radius:15px;
+}
+
+QTimeEdit
+{ 
+	font: 12pt "Arial";
+/*	width: 120px;*/
+	height: 35px;
+	background-color: transparent;
+	border: 1px solid rgb(115,185,255);
+	padding:0px;
+	border-radius:15px;
+}
+
+QDateEdit::down-button,
+QTimeEdit::down-button,
+QDateTimeEdit::down-button,
+QDateEdit::up-button,
+QTimeEdit::up-button,
+QDateTimeEdit::up-button
+{
+	subcontrol-origin:padding;
+	background-color: transparent;
+	border:none;
+	min-width:26px;
+	min-height:36px;
+        border-radius:5px;
+}
+
+QDateEdit::down-button,
+QTimeEdit::down-button,
+QDateTimeEdit::down-button
+{
+	subcontrol-position:left center;
+}
+
+QDateEdit::up-button,
+QTimeEdit::up-button,
+QDateTimeEdit::up-button
+{
+	subcontrol-position:right center;
+}
+
+QDateEdit::down-button:focus,
+QTimeEdit::down-button:focus,
+QDateTimeEdit::down-button:focus,
+QDateEdit::up-button:focus,
+QTimeEdit::up-button:focus,
+QDateTimeEdit::up-button:focus
+{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+	                                 stop: 0 whitesmoke,
+	                                 stop: 0.7 lightgray,
+	                                 stop: 1 whitesmoke);
+	margin: 0px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+QDateEdit::down-button:disabled:focus,
+QTimeEdit::down-button:disabled:focus,
+QDateTimeEdit::down-button:disabled:focus,
+QDateEdit::up-button:disabled:focus,
+QTimeEdit::up-button:disabled:focus,
+QDateTimeEdit::up-button:disabled:focus
+{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+	                                 stop: 0 gainsboro,
+	                                 stop: 0.7 lightgray,
+	                                 stop: 1 gainsboro);
+}
+
+QDateEdit::down-button:pressed,
+QTimeEdit::down-button:pressed,
+QDateTimeEdit::down-button:pressed,
+QDateEdit::up-button:pressed,
+QTimeEdit::up-button:pressed,
+QDateTimeEdit::up-button:pressed
+{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 lavender, stop: 1 whitesmoke);
+	margin: 0px;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+QDateEdit::down-arrow,
+QTimeEdit::down-arrow,
+QDateTimeEdit::down-arrow
+{
+	image:url(:/CMainWin/Resources/images/public/Calendar_left.png);
+}
+
+QDateEdit::up-arrow,
+QTimeEdit::up-arrow,
+QDateTimeEdit::up-arrow
+{
+	image:url(:/CMainWin/Resources/images/public/Calendar_right.png);
+}
+
+
+/***************************************************QSpinBox  QDoubleSpinBox*******************************************************/
+QSpinBox,
+QDoubleSpinBox
+{ 
+	font: 12pt "Microsoft YaHei";
+	min-width:26px;
+	min-height:35px;
+	background-color: transparent;
+	border: 1px solid rgb(115,185,255);
+	border-radius:15px;
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button,
+QSpinBox::up-button,
+QDoubleSpinBox::up-button
+{
+	background-color: none;
+	border: none;
+	border-radius: 5px;
+	min-height: 36px;
+	min-width: 26px;
+}
+
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button
+{
+	subcontrol-position:left center;
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button
+{
+	subcontrol-position:right center;
+}
+
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow
+{
+	image:url(:/CMainWin/Resources/images/public/Calendar_left.png);
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow
+{
+	image:url(:/CMainWin/Resources/images/public/Calendar_right.png);
+}
+
+
+
+
+
+/***************************************************QTextEdit**********************************************************/
+QTextEdit
+{
+    font: 12pt "Microsoft YaHei";
+    background-color: white;
+    border: 1px solid rgb(115,185,255);
+    border-radius: 5px;
+}
+
+
+/************************************************ QPlainTextEdit ***************************************************/
+QPlainTextEdit
+{
+	font: 12pt "Microsoft YaHei";
+	
+}
+
+
+
+/***************************************************QPushButton*********************************************************/
+QPushButton
+{
+    border: 1px solid rgb(115,185,255);
+    color: white;
+    border-radius: 5px;
+    min-height: 32px;
+    outline: 0px;
+    background-color: rgb(0, 147, 221);
+    font: 12pt "Microsoft YaHei";  
+}
+
+
+QPushButton:disabled
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+				     stop: 0 gainsboro,
+				     stop: 0.7 lightgray,
+				     stop: 1 gainsboro);
+    color: black;
+}
+
+QPushButton:pressed
+{
+    color: white;
+    border: 3px solid rgb(115,185,255);
+    background-color: rgb(0, 89, 157);
+}
+
+QPushButton:focus
+{
+    color: white;
+    background-color: rgb(0, 147, 221);
+}
+ 
+
+QPushButton[flat="true"]
+{
+    font: 12pt "Microsoft YaHei";
+    background-color: none;
+    border: none;
+}
+
+
+QPushButton::menu-indicator:open 
+{
+    image: url(:/CMainWin/Resources/image/public/btn_arrow-up.png);
+    subcontrol-position: right center;
+    subcontrol-origin: padding;
+}
+ 
+QPushButton::menu-indicator:closed 
+{
+    image: url(:/CMainWin/Resources/image/public/btn_arrow-down.png);
+    subcontrol-position: right center;
+    subcontrol-origin: padding;
+}
+
+
+QPushButton#btnShutDown 
+{
+    border: none;
+    height: 67px;
+    width: 67px;
+}
+
+QPushButton#btnInitConfirm
+{
+    font: 18pt "Microsoft YaHei";
+    background-image: url(":/CMainWin/Resources/images/SelfCheckDlg/Confirm.png");
+    color: white;
+    background-color: rgb(0, 122, 187);
+    border: none;
+    height: 54px;
+    width: 162px;
+    border-radius: 27px;
+    background-repeat: no-repeat;
+    background-position: Center;
+}
+
+/*,#btnPour*/
+QPushButton#btnInit,#btnClean,#btnAdmin,#btnResearch
+{
+    font: 12pt "Microsoft YaHei";
+    color: white;
+    border: none;
+}
+
+QPushButton#btnInit,#btnClean
+{
+    height: 38px;
+}
+
+QPushButton#btn_Logo
+{
+    background-image: url(":/CMainWin/Resources/images/SelfCheckDlg/VAZLogo.png");   
+    background-repeat: no-repeat;
+    background-position: Center;
+    border: none;
+    border-radius: 0px;
+    min-height: 80px;
+}
+
+QPushButton#WelCome_btn_Logo
+{
+    background-image: url(":/CWelcomeUi/Resources/VAZLogo.png");   
+    background-repeat: no-repeat;
+    background-position: Center;
+    border: none;
+    border-radius: 0px;
+    min-height: 80px;
+}
+
+
+QPushButton#btnMenu
+{
+    background: transparent;
+    border: 0px solid rgb(0, 109, 180);
+    border-radius: 0px;
+}
+
+QPushButton#btnSensorTest_F7
+{
+    font: 12pt "Microsoft YaHei";
+    color: blue;
+}
+
+ QPushButton#btnConfirm
+{
+    font: 12pt "Microsoft YaHei";
+    color: rgb(0, 147, 221);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+QPushButton#btnClear,#btnClose,#btnCancel
+{
+    min-width: 80px;
+}
+
+QPushButton#btnUp,#btnDown
+{
+    background-color: white;
+}
+
+QPushButton#btn_Init
+{
+    color: black;
+}
+
+QPushButton#btnTabTip
+{
+    background-color: transparent;
+    width: 60px;
+    border-radius: 6px;
+}
+
+QPushButton#btnLisConCancel:enabled
+{
+    background-color: rgb(0, 147, 221);
+}
+
+QPushButton#btnLisConSave:enabled
+{
+    background-color: rgb(0, 147, 221);
+}
+
+QPushButton#btnLisConModify:enabled
+{
+    background-color: rgb(0, 147, 221);
+}
+
+
+QPushButton#btnLisConCancel:!enabled
+{
+    background-color:  lightgray;
+    color: black;
+}
+
+QPushButton#btnLisConSave:!enabled
+{
+    background-color:  lightgray;
+    color: black;
+}
+
+QPushButton#btnLisConModify:!enabled
+{
+    background-color:  lightgray;
+    color: black;
+}
+
+CShortStayMsgDlg #closeTipButton
+{
+	background-color: transparent; 
+	border: 0px
+}
+
+
+/***************************************************QGroupBox**********************************************************/
+QGroupBox
+{
+    font: 12pt "Microsoft YaHei";
+    color: rgb(0,147,211);
+    background-color: transparent;
+    border: 1px solid rgb(55, 150, 244);
+    border-radius: 5px;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+
+QGroupBox::title
+{
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 15px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    font: 12pt "Microsoft YaHei";
+}
+
+
+QGroupBox::indicator
+{
+    height: 25px;
+    width: 25px;
+}
+
+/*
+QGroupBox::indicator:unchecked:hover
+{
+    background: none;
+}
+
+
+QGroupBox::indicator:checked:hover
+{
+    background: none;
+}
+*/
+
+QGroupBox::indicator:unchecked
+{
+    image: url(":/CMainWin/Resources/images/public/cbx_uncheck.png");
+}
+
+QGroupBox::indicator:checked
+{
+    image: url(":/CMainWin/Resources/images/public/cbx_check.png");
+}
+
+
+/***************************************************QToolButton**********************************************************/
+QToolButton
+{
+    font: 10pt "Microsoft YaHei";
+    color: white; 
+    background-color: rgb(0, 109, 180);
+    border: 0px;
+    padding-top: 10px;
+    outline: 0px;
+}
+
+QToolButton:!selected
+{
+    background-color: rgb(0, 109, 180);
+}
+
+
+QToolButton:selected
+{
+    background-color: rgb(0, 89, 157);
+}
+
+QToolButton:checked
+{
+	background-image: url(:/CMainWin/Resources/images/NavigationBar/Nav_background2.png);
+}
+
+QToolButton:!checked
+{
+	background-color: rgb(0, 109, 180);
+}
+
+QToolButton:pressed
+{
+    background-color: rgb(0, 89, 157);
+}
+
+QToolButton:disabled
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+				     stop: 0 gainsboro,
+				     stop: 0.7 lightgray,
+				     stop: 1 gainsboro);
+    color:gray;
+}
+
+QToolButton#btnReactionMaintain,#btnCleaningMaintain,#btnSalivaMaintain,#btnEmulsionMaintain,#btnEmulsionMaintain_2
+{
+    border: none;
+    margin: 0px;
+    font: 12pt "Microsoft YaHei";
+    background-color: transparent;
+    color: black;
+}
+
+/***************************************************QLineEdit**********************************************************/
+QLineEdit
+{
+    font: 12pt "Microsoft YaHei";
+    border: 1px solid rgb(115,185,255);
+    border-radius: 5px;
+    background-color: white;
+    selection-background-color: rgb(0, 120, 255);
+    height: 25.5px;
+    padding-left: 8px;
+}
+
+QLineEdit[readOnly="true"]
+{
+    background-color: transparent;
+}
+
+QLineEdit[flag="true"]
+{
+    background-color: white;
+    border: none;
+}
+
+
+QLineEdit[echoMode="2"]
+{
+     lineedit-password-character: 42;			/*or 9679*/
+}
+
+
+
+/***************************************************QComboBox**********************************************************/
+QComboBox
+{
+	border: 1px solid rgb(115,185,255);
+	border-radius: 5px;
+	padding-left: 5px;
+	min-height: 33px;
+	min-width: 60px;
+	font: 12pt "Microsoft YaHei";
+}
+
+
+
+QComboBox::item
+{
+    font: 12pt "Microsoft YaHei";
+}
+
+QComboBox:!editable
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f6f7fa, 
+				       stop: 0.7 lightgray,
+				       stop: 1 #dadbde);
+}
+
+
+QComboBox:on
+{
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 27px;
+}
+
+
+QComboBox QAbstractItemView
+{
+    outline: 0px;
+    border: 1px solid rgb(115,185,255);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    selection-background-color: rgb(62,195,255);
+    font: 12pt "Microsoft YaHei";
+}
+
+
+QComboBox QAbstractItemView::item
+{
+    height: 32px;
+    min-width: 30px;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+    background-color: rgb(62,195,255);
+}
+
+QComboBox#comboxQCAssay, #comboxQCConc
+{
+    color: rgb(0,147,211);
+}
+
+/***************************************************QTableWidget**********************************************************/
+QTableWidget
+{
+    background-color: #D6ECF0;
+    color: #0;
+    border: 3px ridge rgb(0,147,211);
+    show-decoration-selected: 1;
+    alternate-background-color: rgb(176, 215, 255);
+    selection-background-color: rgb(0,147,211);
+    font: 12pt "Microsoft YaHei";
+}
+
+
+QTableWidget QHeaderView::section
+{
+    min-height: 40px;
+    color: white;
+    border-right: 2px solid white;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: rgb(0,147,211);
+    font: 12pt "Microsoft YaHei";
+}
+
+QTableWidget QHeaderView::section:enabled
+{
+    color: white;
+}
+
+QTableWidget QHeaderView::section:disabled
+{
+    color: rgb(153,153,153);
+}
+
+
+
+QTableWidget::item
+{
+    border-right: 1px solid white;
+    border-top: 1px solid rgb(62,195,255);
+    padding: -1px;
+    min-width: 106.75px;
+    min-height: 50px;
+}
+
+
+/*
+QTableWidget::item:hover
+{
+    background-color: rgb(0,147,211);
+}*/
+
+
+QTableWidget::item:selected
+{
+    background-color: rgb(0,147,211);
+}
+
+
+
+QTableWidget#tableWidgetFault QHeaderView::section
+{
+    color: black;
+    border-right: 1px solid rgb(211,232,255) ;
+    background-color: white;
+}
+
+QTableWidget#tableWidgetFault
+{
+    background-color: rgb(211,232,255);
+}
+
+
+QTableWidget#tableWidget_Sample QHeaderView::section
+{
+    min-height: 47px;
+}
+
+QTableWidget#tableWidget_QcOrder QHeaderView::section
+{
+    min-height: 45px;
+    max-height: 45px;
+}
+
+QTableWidget#tableWidget_Qc QHeaderView::section
+{
+    min-height: 45px;
+    max-height: 45px;
+}
+
+
+
+/***************************************************QScrollBar**********************************************************/
+QScrollBar:vertical
+{
+    width: 30px;
+    background-color: #D6ECF0;
+    margin: 0px,0px,0px,0px; 
+    padding-top: 35px; 
+    padding-bottom: 35px; 
+}
+
+QScrollBar::handle:vertical
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+				     stop: 0 whitesmoke,
+				     stop: 0.7 rgb(0,147,211),
+				     stop: 1 whitesmoke); 
+    border-radius: 5px;
+}
+
+/*
+QScrollBar::handle:vertical:hover
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+				     stop: 0 whitesmoke,
+				     stop: 0.7 rgb(62,195,255),
+				     stop: 1 whitesmoke); 
+}*/
+
+QScrollBar::add-line:vertical
+{
+    border: 1px solid white;
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: 1px solid white;
+}
+
+QScrollBar::add-page:vertical 
+{
+    background-color: #D6ECF0; 
+}
+
+
+QScrollBar::sub-page:vertical 
+{
+    background-color: #D6ECF0; 
+}
+
+
+QScrollBar::up-arrow:vertical 
+{
+    image: url(":/CMainWin/Resources/images/public/sort_up.png");
+}
+
+QScrollBar::down-arrow:vertical
+{
+    image: url(":/CMainWin/Resources/images/public/sort_down.png");
+}
+
+
+QScrollBar::up-arrow:vertical:pressed,
+QScrollBar::down-arrow:vertical:pressed
+{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+
+
+QScrollBar:horizontal
+{
+    height: 30px;
+    background-color: #D6ECF0;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+QScrollBar::handle:horizontal
+{
+        background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+				     stop: 0 whitesmoke,
+				     stop: 0.7 rgb(0,147,211),
+				     stop: 1 whitesmoke); 
+    border-radius: 5px;
+}
+
+/*
+QScrollBar::handle:horizontal:hover
+{
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+			     stop: 0 whitesmoke,
+			     stop: 0.7 rgb(62,195,255),
+			     stop: 1 whitesmoke); 
+}*/
+
+
+QScrollBar::add-line:horizontal
+{
+    border: 1px solid white;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    border: 1px solid white;
+}
+
+QScrollBar::add-page:horizontal 
+{
+    background-color: #D6ECF0; 
+}
+
+
+QScrollBar::sub-page:horizontal 
+{
+    background-color: #D6ECF0; 
+}
+
+
+QScrollBar::left-arrow:horizontal 
+{
+    image: url(":/CMainWin/Resources/images/public/Left_arrow.png");
+}
+
+
+QScrollBar::right-arrow:horizontal
+{
+    image: url(":/CMainWin/Resources/images/public/Right_arrow.png");
+}
+
+
+QScrollBar::left-arrow:horizontal:pressed,
+QScrollBar::right-arrow:horizontal:pressed
+{
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+
+/***************************************************QTabWidget**********************************************************/
+QTabWidget
+{
+    background-color: transparent;
+}
+
+
+QTabWidget::pane
+{
+    border: 0px solid rgb(176, 215, 255);
+}
+
+
+QTabWidget::tab-bar
+{
+    left: 0px;
+}
+
+
+QTabWidget#tabWidget_Maintain::pane 
+{
+    background-color: rgb(176,  215, 255);
+}
+
+QTabWidget#tabWidget_Result::pane 
+{
+    background-color: #D6ECF0;
+}
+
+
+
+/***************************************************QTabBar*************************************************************/
+
+QTabBar:tab
+{
+    color: white;
+    min-height: 40px;
+    min-width: 111.25px;
+    margin-right: 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; 
+    font: 12pt "Microsoft YaHei";
+}
+
+
+
+QTabBar::tab:selected
+{
+    background-color: rgb(0, 89, 157);
+}
+ 
+QTabBar::tab:!selected
+{
+    background-color: rgb(0, 147, 221);
+}
+ 
+/*
+ QTabBar::tab:hover 
+{
+    background-color: rgb(0, 89, 157);
+}*/
+
+
+
+/************************************************ QSlider **********************************************************/
+QPageSlider
+{
+    font:12pt "Microsoft YaHei";
+    height: 20px; 
+    color:rgb(127,127,127);
+}
+
+QPageSlider::groove:horizontal {
+    height: 20px; 
+    background-image: url(":/CMainWin/Resources/images/public/slider_line.png");
+    background-position:center;
+    background-repeat: repeat-x;
+    margin-right:48px;
+    margin-left: 10px;
+}
+
+QPageSlider::handle:horizontal 
+{
+    background-image: url(":/CMainWin/Resources/images/public/slider_hand.png");
+    background-repeat:no-repeat;background-position: center;
+    width: 25px;
+    margin: -9px;            
+}
+
+/*
+QPageSlider::handle:horizontal:hover 
+{
+    background-image: url(":/CMainWin/Resources/images/public/slider_hand_light.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 25px;
+    margin: -9px;            
+}*/
+
+QPageSlider::groove:vertical 
+{
+    width:2px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:0, stop:0 #ACB1B5, stop:1 #ACB1B5);
+    margin-top:10px;
+    margin-bottom:60px;
+}
+
+QPageSlider::handle:vertical 
+{
+    background-image: url(":/CMainWin/Resources/images/public/slider_hand.png");
+    background-repeat:no-repeat;background-position: center;
+    height: 25px;
+    margin: -10px -12;
+}
+
+/*
+QPageSlider::handle:vertical:hover
+{
+    background-image: url(":/CMainWin/Resources/images/public/slider_hand_light.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 25px;
+    margin: -10px -12;      
+}*/
+
+
+
+
+
+/************************************************ QListView ********************************************************/
+QListView 
+{
+    show-decoration-selected: 1;
+    font:12pt "Microsoft YaHei";
+    color: black;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+QListView::item
+{
+    height: 60px;
+}
+
+
+
+/************************************************ ButtonTableWidget ************************************************/
+ButtonTableWidget
+{
+	margin: 2px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+ButtonTableWidgetItem
+{
+	outline: none;
+	font: 12pt "Microsoft YaHei";
+	border: 1px solid lightgray;
+}
+
+
+QGraphicsItem
+{
+	font: 10pt "Microsoft YaHei";
+}
+
+QGraphicsView
+{
+	font: 10pt "Microsoft YaHei";
+}
+
+
+
+
+
+
+
+
+
+
+
